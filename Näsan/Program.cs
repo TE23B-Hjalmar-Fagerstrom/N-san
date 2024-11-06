@@ -1,11 +1,11 @@
-﻿näsan1();
+﻿//näsan1();
 näsan2();
 näsan3();
 
 static void näsan1()
 {
     //Skapa en if-sats som skriver ut "Hello, World!" ifall 6 är större än eller lika med 3
-    if (6 > 3)
+    if (6 >= 3)
     {
         Console.WriteLine("Hello, World!");
     }
@@ -94,6 +94,36 @@ static void näsan1()
 
 static void näsan2()
 {
+//Skapa en string-array med namnen på fem olika leksaker.
+string[] toys = {"woody","buzz ligthyear","nurf gun","action figure","rocking horse"};
+
+
+//Skriv en for-loop (eller foreach-loop) som skriver ut namnet på varje leksak på en egen rad.
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine(toys[i]);
+}
+
+//Skapa en string-array med namnen på fem av dina klasskamrater.
+string[] names = {"Jack","Alexander","Alexander","Mattias","Lukas"};
+
+//Skapa en integer-array med fem värden mellan 0 och 10.
+int[] points = {1,3,5,7,9};
+
+//Komplettera for-loopen så att den på varje rad skriver ut något liknande "Pelle ger Barbie betyget 5". Använd dina klasskamraters namn, leksakernas namn och värdena från int-arrayen.
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine(names[i],"ger" toys[i] "betyget" points[i]);
+}
+
+//Skapa en tom string-lista som heter "cities".
+
+
+//Skapa en loop där du varje gång loopen körs hämtar en string från användaren med Console.ReadLine. Lägg till den string du får från användaren till cities-listan. Avbryt loopen om användaren skriver "exit".
+
+
+//Skapa en loop som ligger efter den ovanstående. Den här loopen ska skriva ut alla strings som finns sparade i cities-listan.
+
 
 }
 
