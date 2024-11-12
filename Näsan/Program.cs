@@ -113,17 +113,34 @@ int[] points = {1,3,5,7,9};
 //Komplettera for-loopen så att den på varje rad skriver ut något liknande "Pelle ger Barbie betyget 5". Använd dina klasskamraters namn, leksakernas namn och värdena från int-arrayen.
 for (int i = 0; i < 5; i++)
 {
-    Console.WriteLine(names[i],"ger" toys[i] "betyget" points[i]);
+    Console.WriteLine($"{names[i]} ger {toys[i]} betyget {points[i]}");
 }
 
 //Skapa en tom string-lista som heter "cities".
-
+List<string> cities = [""];
 
 //Skapa en loop där du varje gång loopen körs hämtar en string från användaren med Console.ReadLine. Lägg till den string du får från användaren till cities-listan. Avbryt loopen om användaren skriver "exit".
-
+Console.WriteLine("skriv städer du kan, för att lämna skriv 'exit'");
+bool exit = false;
+while (exit == false)
+{
+    string addCities = Console.ReadLine().ToLower();
+    if (addCities == "exit")
+    {
+        exit = true;
+    }
+    if (addCities != "exit")
+    {
+    cities.Add(addCities);
+    }
+    
+}
 
 //Skapa en loop som ligger efter den ovanstående. Den här loopen ska skriva ut alla strings som finns sparade i cities-listan.
-
+for (int i = 0; i < cities.Count; i++)
+{
+    Console.WriteLine(cities[i]);
+}
 
 }
 
